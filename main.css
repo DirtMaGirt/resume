@@ -187,17 +187,202 @@
 }
 /* Mid-Large - Format Style 3 */
 @media only screen  and (min-width: 601px) and (max-width: 800px) {
-    body{ background: orange;}
-    #wrapper{}
-    #header{}
-    #main_content{}
-    #footer{}    
+    p{
+        color: white;
+    }
+    body{ background: black;}
+    #wrapper{
+        width: 100%;
+        height: 800px;
+        border: 2px solid blue;
+        flex: column;
+    }
+    #header{
+        width: 100%;
+        height: 30px;
+        border-bottom: 1px solid blue; 
+    }
+    #main_content{
+        width: 100%;
+        height: 751px;
+        border-bottom: 1px solid blue; 
+        display: flex; 
+        flex-direction: row;
+    }
+    #footer{
+        width: 100%;
+        height: 20px;
+    }
+    .project_top {
+        display: flex; 
+        flex-direction: column;
+        width: 100%;
+        height: 700px;
+        border-bottom: 0px solid blue; 
+        overflow: hidden auto;
+    }
+
+    .project_bottom {
+        order: -1;
+        width:: 100%;
+        height: 700px;
+        overflow: hidden auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      
+    }
+    
+    .pj_header {
+        width: 100%;
+        height: 60%;
+        background: ;
+        border-bottom: 1px solid blue;
+    }
+    .pj_footer{
+        width: 100%;
+        height: 40%;
+        background:  ;
+        border-bottom: 0px solid blue;
+    }
+
+    .pj_card{
+        display: flex;
+        flex-direction: column;
+        width: 150px; 
+        height: 100px;
+        background: white; 
+        margin-right: 10px;
+        border-bottom: 1px solid blue;
+        margin-bottom: 10px
+    }
+
+    .project_twofer{
+        display: flex; 
+        flex-direction: column;
+        margin-left: 10px;
+        width: 310px;
+        display: flex;
+        margin-bottom: 0px;
+        margin-top: 10px;
+        flex-grow: 1;
+    }
+
+    .pj_description{
+        width: 150px;
+        height: 30px;
+        background: purple;
+
+    }
+    .pj_content{
+            width: 150px;
+        height: 70px;
+        
+    }
+
+    img{
+        height: 100%;
+        width: 100%;
+    }
+   
 }
 /* Large - Format Style 4 */
 @media only screen  and (min-width: 801px){
-    body{background: blue;}
-    #wrapper{}
-    #header{}
-    #main_content{}
-    #footer{}    
+    p{
+        color: white;
+    }
+    body{ background: black;}
+    #wrapper{
+        width: 100%;
+        height: 800px;
+        border: 2px solid blue;
+        flex: column;
+    }
+    #header{
+        width: 100%;
+        height: 30px;
+        border-bottom: 1px solid blue; 
+    }
+    #main_content{
+        width: 100%;
+        height: 751px;
+        border-bottom: 1px solid blue; 
+        display: flex; 
+        flex-direction: row;
+    }
+    #footer{
+        width: 100%;
+        height: 20px;
+    }
+    .project_top {
+        display: flex; 
+        flex-direction: column;
+        width: 100%;
+        height: 700px;
+        border-bottom: 0px solid blue; 
+        overflow: hidden auto;
+    }
+
+    .project_bottom {
+        order: -1;
+        width:: 100%;
+        height: 700px;
+        overflow: hidden auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      
+    }
+    
+    .pj_header {
+        width: 100%;
+        height: 60%;
+        background: ;
+        border-bottom: 1px solid blue;
+    }
+    .pj_footer{
+        width: 100%;
+        height: 40%;
+        background:  ;
+        border-bottom: 0px solid blue;
+    }
+
+    .pj_card{
+        display: flex;
+        flex-direction: column;
+        width: 150px; 
+        height: 100px;
+        background: white; 
+        margin-right: 10px;
+        border-bottom: 1px solid blue;
+        margin-bottom: 10px
+    }
+
+    .project_twofer{
+        display: flex; 
+        flex-direction: column;
+        margin-left: 10px;
+        width: 310px;
+        display: flex;
+        margin-bottom: 0px;
+        margin-top: 10px;
+        flex-grow: 1;
+    }
+
+    .pj_description{
+        width: 150px;
+        height: 30px;
+        background: purple;
+
+    }
+    .pj_content{
+            width: 150px;
+        height: 70px;
+        
+    }
+
+    img{
+        height: 100%;
+        width: 100%;
+    }
      }
