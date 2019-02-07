@@ -3,37 +3,65 @@
     p{
         color: white;
     }
-    body{ background: black;}
+    body{ background: #4a4d41;}
     #wrapper{
         width: 100%;
         height: 800px;
-        border: 2px solid blue;
-        flex: column;
+        border: 2px solid white;
+        display: flex;
+        flex-direction: column;
     }
     #header{
         width: 100%;
-        height: 30px;
-        border-bottom: 1px solid blue; 
+        height: 20%;
     }
     #main_content{
         width: 100%;
-        height: 751px;
-        border-bottom: 1px solid blue; 
+        height: 60%;
+        background: blue;
+     
     }
     #footer{
         width: 100%;
-        height: 20px;
+        height: 20%;
+           background: orange;
+
     }
     .project_top {
         width: 100%;
-        height: 400px;
-        border-bottom: 1px solid blue; 
+        height: 600px;
+       background: orange;
         overflow: hidden;
+    }
+            .side_panel_l{
+                width: 20%;
+                height: 100%;
+                background:grey;
+            }
+            .side_panel_m{
+                    width: 59%;
+                height: 100%;
+                background:white;
+            }
+           .side_panel_r{
+                   width: 20%;
+                height: 100%;
+                background:lightgrey;
+           }
+
+    .content_header { 
+        background: black;
+        height: 35%;
+        width: 100%;
+        display: flex;
+
+
     }
 
     .project_bottom {
         width:: 100%;
-        height: 350px;
+        height: 200px;
+        background: black;
         overflow: hidden auto;
          display: flex;
          flex-direction: column;
@@ -45,7 +73,7 @@
         width: 100%;
         height: 60%;
         background: ;
-        border-bottom: 1px solid blue;
+        border-bottom: 1px solid white;
     }
     .pj_footer{
         width: 100%;
@@ -308,7 +336,7 @@
         height: 751px;
         border-bottom: 1px solid blue; 
         display: flex; 
-        flex-direction: row;
+        flex-direction: column;
     }
     #footer{
         width: 100%;
@@ -316,20 +344,22 @@
     }
     .project_top {
         display: flex; 
-        flex-direction: column;
+        flex-direction: row;
         width: 100%;
         height: 700px;
         border-bottom: 0px solid blue; 
         overflow: hidden auto;
+        align-content: stret
+        ch;
     }
 
     .project_bottom {
-        order: -1;
         width:: 100%;
         height: 700px;
         overflow: hidden auto;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+
         justify-content: center;
       
     }
