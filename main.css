@@ -1,30 +1,57 @@
 /* Mobile - Format Style 1 */
 @media only screen  and (min-width: 320px)  and (max-width: 480px) and (orientation: portrait) {
+ @import url('https://fonts.googleapis.com/css?family=Kanit:900');
+ 
     p{
         color: white;
     }
     body{ background: #4a4d41;}
+     .rando_spacer{
+        height: 4px;
+        width:100%;
+        background: whitesmoke;
+-webkit-box-shadow: -4px 11px 17px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: -4px 11px 17px 1px rgba(0,0,0,0.75);
+box-shadow: -4px 11px 17px 1px rgba(0,0,0,0.75);
+    } 
     #wrapper{
         width: 100%;
         height: 800px;
-        border: 2px solid white;
+        border: 3px solid white;
         display: flex;
         flex-direction: column;
     }
     #header{
         width: 100%;
-        height: 20%;
+        height: 25%;
+        display: flex; 
+        margin-bottom: 0px;
     }
     #main_content{
         width: 100%;
-        height: 60%;
-        background: blue;
+        height: 70%;
+        margin-top:5px;
+        background: whitesmoke;
+        -webkit-box-shadow: -4px 11px 17px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: -4px 11px 17px 1px rgba(0,0,0,0.75);
+box-shadow: -4px 11px 17px 1px rgba(0,0,0,0.75);
+
+        
+
      
     }
     #footer{
-        width: 100%;
-        height: 20%;
-           background: orange;
+        z-index: -1;
+        width: 98.1%;
+        height: 10%;
+        border: 0px white solid; 
+        margin-top: -3px;
+        -webkit-box-shadow: inset -4px 11px 17px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: inset -4px 11px 17px 1px rgba(0,0,0,0.75);
+box-shadow: inset -4px 11px 17px 1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px px 17px 1px rgba(0,0,0,0.75);
+box-shadow: 0px 11px 17px 1px rgba(0,0,0,0.75);
 
     }
     .project_top {
@@ -34,19 +61,23 @@
         overflow: hidden;
     }
             .side_panel_l{
-                width: 20%;
+                width: 23%;
                 height: 100%;
-                background:grey;
+                background:whitesmoke;
             }
             .side_panel_m{
-                    width: 59%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 54%;
                 height: 100%;
-                background:white;
+                background:whitesmoke;
+              
             }
            .side_panel_r{
-                   width: 20%;
+                   width: 23%;
                 height: 100%;
-                background:lightgrey;
+                background:whitesmoke;
            }
 
     .content_header { 
@@ -114,8 +145,22 @@
     }
 
     img{
-        height: 100%;
-        width: 100%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: 20%;
+        width: 55%;
+         border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  -webkit-box-shadow: inset -4px 11px 36px -13px rgba(0,0,0,0.75);
+-moz-box-shadow: inset -4px 11px 36px -13px rgba(0,0,0,0.75);
+box-shadow: inset -4px 11px 36px -13px rgba(0,0,0,0.75);
+  margin-bottom: 2px;
+  border-radius: 50%
+  -webkit-box-shadow: -4px 11px 36px -13px rgba(0,0,0,0.75);
+-moz-box-shadow: -4px 11px 36px -13px rgba(0,0,0,0.75);
+box-shadow: -4px 11px 36px -13px rgba(0,0,0,0.75);
     }
 }
 /* Mid-Range - Format Style 2 */
