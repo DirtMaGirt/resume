@@ -11,8 +11,14 @@
     p{
         color: black;
         font-family: 'Kanit', sans-serif;
+               font-size: 60px;
+               padding: 0;
+               margin: 0;
+               white-space: pre-wrap;
+               margin-bottom: -20px;
+               margin-right:10px;
     }
-    body{ background: #4a4d41;
+    body{ background: pink;
     font-family: 'Kanit', sans-serif;
     color: black;
     }
@@ -44,14 +50,7 @@ box-shadow: -4px 11px 17px 1px rgba(0,0,0,0.75);
         width: 100%;
         height: 70%;
         margin-top:5px;
-        background: ;
-        
-        
-       
-
-
-        
-
+        background:  ;
      
     }
     #footer{
@@ -75,30 +74,25 @@ box-shadow: -4px 11px 17px 1px rgba(0,0,0,0.75);
             .side_panel_l{
                 display: flex;
                 flex-direction: column;
-                width: 40%;
+                width: 30%;
                 height: 100%;
                 background:;
                 justify-content: flex-end;
                 align-items: flex-end;
-                align-content:flex-start;
+                align-content:flex-end;
             }
             
-            p{
-               font-size: 50px;
-               padding: 0;
-               margin: 0;
-               white-space: pre-wrap;
-               margin-bottom: -20px;
-               margin-right:10px;
-            }
+
             .side_panel_m{
                 display: flex;
-                align-items: flex-start;
-                justify-content: flex-start;
+                align-items: center;
+                justify-content: center;
+                align-content: flex-start;
                 order: -1;
-                width: 60%;
+                width: 70%;
                 height: 100%;
                 border: 2px white solid;
+                overflow: hidden;
             }
            .side_panel_r{
                 width: 10%;
@@ -108,6 +102,11 @@ box-shadow: -4px 11px 17px 1px rgba(0,0,0,0.75);
                 height: 100%;
                 background:;
            }
+
+    #resume-title>p{
+        Font-size: 40px;
+        color: lightgrey;
+    }
 
     .content_header { 
         background: black;
@@ -184,6 +183,70 @@ box-shadow: -4px 11px 17px 1px rgba(0,0,0,0.75);
 
     }
 
+    #L_W{
+
+     background:yellow; 
+     border: 2px color white;
+     height:200px;
+     width: 100px;
+}
+
+#L_W> p{
+  font-size: 15vh;
+       color: transparent;
+       -webkit-text-stroke: 4px whitesmoke;
+   
+}
+
+    #L_W_1{
+background:purple; 
+ 
+     border: 2px color white;
+     height:200px;
+     width: 100px;
+}
+   #L_W_1> p{
+      font-size: 15vh;
+       color: transparent;
+       -webkit-text-stroke: 4px whitesmoke;
+       
+   }
+       #L_J{
+background:blue;
+     
+     border: 2px color white;
+     height:200px;
+     width: 100px;
+     
+}
+   #L_J> p{
+    font-size: 15vh;
+       color: transparent;
+       -webkit-text-stroke: 4px whitesmoke;
+   
+       
+   }
+          #L_D{
+background:red;
+     background:; 
+     border: 2px color white;
+     height:200px;
+     width: 100px;
+     margin-left: -20px;
+}
+   #L_D> p{
+  font-size: 15vh;
+       color: transparent;
+       -webkit-text-stroke: 4px whitesmoke;
+   
+   }
+   #L_Q> p{
+       font-size: 50px;
+        color: whitesmoke;
+          margin-left: -20px;
+        
+   }
+
 .resume{
     display: flex;
     flex-direction: column;
@@ -195,13 +258,14 @@ box-shadow: -4px 11px 17px 1px rgba(0,0,0,0.75);
         background: ;
         display: flex;
         margin-top: 10px;
-        border-top: 2px solid white;
+        border-top: 0px solid white;
+        
     }
     #resume-content{
         height: 500px; 
         Width: 100%;
         border: white 0px solid;
-        background: ;
+        background: purple;
          overflow: hidden scroll;
          border-top: 0px white solid;
          -webkit-box-shadow: inset 15px 17px 26px -7px rgba(0,0,0,0.75);
