@@ -1,377 +1,423 @@
 @import url('https://fonts.googleapis.com/css?family=Kanit:900');
 
-/* Mobile - Format Style 1 */
-@media only screen  and (min-width: 320px)  and (max-width: 480px) and (orientation: portrait) {
- 
- a{
-     color: black;
-     text-decoration: none;
+h1, h2, h3, h4, h5, p, {
+    line-height: .2;
+}
 
+/* Mobile - Format Style 1 - Portrait */
+@media only screen  and (min-width: 0px)  and (max-width: 480px) and (orientation: portrait) {
+ 
+ body{
+     height: 100vh;
+     width: 400px;
+     background: ;
+     overflow: hidden;
+          display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center ;
  }
-    p{
-        color: black;
-        font-family: 'Kanit', sans-serif;
-               font-size: 40px;
-               padding: 0;
-               margin: 0;
-               white-space: pre-wrap;
-               margin-bottom: -20px;
-               margin-right:10px;
-    }
-    body{ background: lightblue;
-    font-family: 'Kanit', sans-serif;
-    color: black;
-    }
-     .rando_spacer{
-        height: 4px;
-        width:100%;
-        background: whitesmoke;
--webkit-box-shadow: -4px 11px 17px 1px rgba(0,0,0,0.75);
--moz-box-shadow: -4px 11px 17px 1px rgba(0,0,0,0.75);
-box-shadow: -4px 11px 17px 1px rgba(0,0,0,0.75);
-    } 
-    #wrapper{
-        width: 100%;
-        height: 800px;
-        border: 0px solid white;
-        display: flex;
-        flex-direction: column;
-    }
-    #header{
-        width: 100%;
-        height: 25%;
-        display: flex; 
-        justify-content: flex-start;
-        margin-bottom: 0px;
-    }
-    #main_content{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 70%;
-        margin-top:5px;
-        background:  ;
+
+ #wrapper_{
+     height: 700px;
+     width: 400px;
+     background: ;
+     border: 0px solid grey;
+     display: flex;
+    flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+/* Start Header */
+
+#header {
+     height: 100px;
+     width: 400px;
+     border: 0px solid black;
+     display: flex; 
+     align-items: center;
      
-    }
-    #footer{
-        display: flex; 
-        flex-direction: row; 
-        justify-content: center;
-        align-items: center;
-        width: 98.1%;
-        height: 10%;
-        border-top: 2px white solid; 
-        margin-top: 2px;
-
-
-    }
-    .project_top {
-        width: 100%;
-        height: 600px;
-       background: orange;
-        overflow: hidden;
-    }
-            .side_panel_l{
-                display: flex;
-                flex-direction: column;
-                width: 30%;
-                height: 100%;
-                background:;
-                justify-content: flex-end;
-                align-items: flex-end;
-                align-content:flex-end;
-            }
-            
-
-            .side_panel_m{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                align-content: flex-start;
-                order: -1;
-                width: 70%;
-                height: 100%;
-                border: 2px white solid;
-                overflow: hidden;
-            }
-           .side_panel_r{
-                width: 10%;
-                justify-content: flex-start;
-                align-items: flex-start;
-                align-content:center;
-                height: 100%;
-                background:;
-           }
-
-    #resume-title>p{
-        Font-size: 40px;
-        color: lightgrey;
-    }
-
-    .content_header { 
-        background: black;
-        height: 35%;
-        width: 100%;
-        display: flex;
-
-
-    }
-
-    .project_bottom {
-        width:: 100%;
-        height: 200px;
-        background: black;
-        overflow: hidden auto;
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-      
-    }
-    
-    .pj_header {
-        width: 100%;
-        height: 60%;
-        background: ;
-        border-bottom: 1px solid white;
-    }
-    .pj_footer{
-        width: 100%;
-        height: 40%;
-        background:  ;
-        border-bottom: 0px solid blue;
-    }
-
-    .pj_card{
-        display: flex;
-        flex-direction: column;
-        width: 150px; 
-        height: 100px;
-        background: white; 
-        margin-right: 10px;
-        border-bottom: 1px solid blue;
-    }
-
-    .project_twofer{
-        margin-left: 10px;
-        width: 310px;
-        display: flex;
-        margin-bottom: 0px;
-        margin-top: 10px;
-        flex-grow: 1;
-    }
-
-    .pj_description{
-        width: 150px;
-        height: 30px;
-        background: purple;
-
-    }
-    .pj_content{
-            width: 150px;
-        height: 70px;
-        
-    }
-
-    img{
-        height: auto;
-        margin-left: auto;
-        margin-right: 10%;
-        width: 80%;
-         border: 0px solid #ddd;
-        max-width: 140px; 
-        max-height: 230px;
-
-    }
-
-    #L_W{
-
-     background:yellow; 
-     border: 2px color white;
-     height:200px;
-     width: 100px;
 }
 
-#L_W> p{
-  font-size: 15vh;
-       color: transparent;
-       -webkit-text-stroke: 4px whitesmoke;
-   
+
+.block_A{
+height:98%;
+width: 150px;
+background: ;
+  border-right: 2px solid black;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
 }
 
-    #L_W_1{
-background:purple; 
+.block_B{
+    margin-left: 5px;
+height:98%;
+width: 250px;
+background: ;
+  border-left: 3px solid black;
+   display: flex; 
+   flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  text-transform: uppercase;
  
-     border: 2px color white;
-     height:200px;
-     width: 100px;
 }
-   #L_W_1> p{
-      font-size: 15vh;
-       color: transparent;
-       -webkit-text-stroke: 4px whitesmoke;
-       
-   }
-       #L_J{
-background:blue;
-     
-     border: 2px color white;
-     height:200px;
-     width: 100px;
-     
-}
-   #L_J> p{
-    font-size: 15vh;
-       color: transparent;
-       -webkit-text-stroke: 4px whitesmoke;
-   
-       
-   }
-          #L_D{
-background:red;
-     background:; 
-     border: 2px color white;
-     height:200px;
-     width: 100px;
-     margin-left: -20px;
-}
-   #L_D> p{
-  font-size: 15vh;
-       color: transparent;
-       -webkit-text-stroke: 4px whitesmoke;
-   
-   }
-   #L_Q> p{
-       font-size: 50px;
-        color: whitesmoke;
-          margin-left: -20px;
-        
-   }
 
+.block_B>h1{
+    line-height: .0;
+     font-size: 20px;
+}
+
+.block_A>h1{
+    line-height: .2;
+    font-size: 30px;
+}
+
+
+
+#main-content{
+      height: 610px;
+    width: 402px;
+    display: flex; 
+      flex-direction: column;
+}
+
+/* Resume Styling */
+.resume-head{
+    border: 0px solid black;
+    height: 60px;
+    width: 380px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+      display: flex; 
+      flex-direction: column;
+     justify-content: center;
+     align-items: center;
+   
+     background: whitesmoke;
+   
+
+}
 .resume{
+    border: 0px solid black; 
+    background: ;
+    height: 460px;
+   width: 400px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start;
+
+    /* -webkit-box-shadow: inset 0px 19px 52px -15px rgba(0,0,0,0.51);
+    -moz-box-shadow: inset 0px 19px 52px -15px rgba(0,0,0,0.51);
+    box-shadow: inset 0px 19px 52px -15px rgba(0,0,0,0.51); */
+    overflow: hidden auto;
+
+
+}
+.resume_block {
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+    border-bottom: 2px solid black;
+}
+.job_short{
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
 }
-    #resume-title{
-        width: 100%;
-        height: 13%;
-        background: ;
-        display: flex;
-        margin-top: 10px;
-        border-top: 0px solid white;
-        
-    }
-    #resume-content{
-        height: 500px; 
-        Width: 100%;
-        border: white 0px solid;
-        background: purple;
-         overflow: hidden scroll;
-         border-top: 0px white solid;
-         -webkit-box-shadow: inset 15px 17px 26px -7px rgba(0,0,0,0.75);
--moz-box-shadow: inset 15px 17px 26px -7px rgba(0,0,0,0.75);
-box-shadow: inset 15px 17px 26px -7px rgba(0,0,0,0.75);
-    }
+p, li {
+    font-size: 13px;
+}
+.job_short> p,h1,h2,h3,h4,h5,h6 {
+    line-height: 0px;
+}
+.job_short>p, {
+    font-size: 40px;
+}
 
-    .resume-line-item > p {
-        font-size: 20px;
-        white-space: 1;
-        line-height: 2;
-    }
-}
-/* Mobile-landscape W:480px H:320px*/
-@media only screen  and (min-width: 320px)  and (max-width: 480px) and (orientation: landscape){
-body{
+/* Footer begin */
+#footer{
+    width: 100%;
+    Height: 40px;
+    background: lightgrey;
+    margin-bottom: 10px;
     display: flex; 
+    align-items: center;
+    margin-top: 10px;
+    
+
+}
+
+#foot-block{
+    width: 30px; 
+    height: 25px;
+    border: black 1px solid;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
     justify-content: center;
-     background: #4a4d41;
-         height: 360px; 
-    width:480px;
-    overflow: hidden;
-    font-family: 'Kanit', sans-serif;
+}
+
+}
+
+
+
+/* Mobile - Format Style 2 - Landscape (For Galaxy S9/S9+) */
+@media only screen  and (min-width: 100px) and (orientation: landscape) {
+  body{
+   height: 100vh;
+     width: 100vw;
+     background: white;
+      overflow: hidden;
+      }
+
+  #wrapper{
+
+  }
+
+  #header {
+    height: 72px;
+    width: 100%;
    
 }
-#wrapper{
-    
-    height: 100%; 
-    width:100%;
-    border: 2px grey solid;
-    overflow: hidden;
-    background: #4a4d41;
-    margin:0px;
-    padding: 0px;
-    display: flex; 
 
+#main-content{
+      height: 72px;
+    width: 100%;
+}
+}
+
+/* Tablet - Format Style 3 - Landscape Ipad */
+@media only screen  and (min-width: 768px) and (max-width: 900px){
+
+ body{
+     height: 100vh;
+     width: 768px;
+     background: ;
+     overflow: hidden;
+          display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center ;
+ }
+ #wrapper_main{
+     height: 100%; 
+     width: 760px;
+     border: 0px solid black;
+     display: flex; 
+     align-items: center;
+     justify-content: center;
+
+ }
+
+#wrapper_content{
+    margin-left: 20px;
+    width: 320px; 
+    height: 90%; 
+    background: whitesmoke;
+    border-top: solid 0px black;
+    border-right: solid 0px black;
+    border-bottom: solid 0px black;
+    display: flex; 
+    flex-direction: column; 
     align-items: center;
 
 }
 
-    #header{
-        width: 30%;
-        height: 100%;
-        background:  ;
-        display: flex; 
-        justify-content: flex-start;
-        margin-bottom: 0px;
-        margin:0px;
-        padding: 0px;
-         align-items: flex-start;
-         border: 2px grey solid;
-         flex-direction: column;
+.section{
+    height: 90%; 
+    width: 310px; 
+    
+    margin-top: 10px;
+    border: 2px solid black;
+}
+.section_head{
+height: 50px;
+border: 0px black solid;
+background: lightgrey;
+margin-left: 10px;
+}
+
+.section_content{
+height: 100px;
+border: 1px black solid;
+border-right: 0px;
+background: ;
+margin-left: 10px;
+margin-top: 10px;
+}
+/* Mobile-wrapper */
+
+ #wrapper_mobile{
+     height: 700px;
+     width: 400px;
+     background: ;
+     border: 0px solid grey;
+     display: flex;
+    flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+
+
+/* Start Header */
+
+#header {
+     height: 100px;
+     width: 400px;
+     border: 0px solid black;
+     display: flex; 
+     align-items: center;
+     
+}
+
+
+.block_A{
+height:98%;
+width: 150px;
+background: ;
+  border-right: 2px solid black;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+.block_B{
+    margin-left: 5px;
+height:98%;
+width: 250px;
+background: ;
+  border-left: 3px solid black;
+   display: flex; 
+   flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  text-transform: uppercase;
+ 
+}
+
+.block_B>h1{
+    line-height: .0;
+     font-size: 20px;
+}
+
+.block_A>h1{
+    line-height: .2;
+    font-size: 30px;
+}
+
+
+
+#main-content{
+      height: 610px;
+    width: 402px;
+    display: flex; 
+      flex-direction: column;
+}
+
+/* Resume Styling */
+.resume-head{
+    border: 0px solid black;
+    height: 60px;
+    width: 380px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+      display: flex; 
+      flex-direction: column;
+     justify-content: center;
+     align-items: center;
    
-    }
-    #main_content{
-        display: flex;
-        flex-direction: column;
-        width: 70%;
-        height: 100%;
-        margin:5px;
-        background: ;
-       border: 2px grey solid;
-     
-    }
-    #footer{
-        visibility: hidden;
-        display: flex; 
-        flex-direction: row; 
-        justify-content: center;
-        align-items: center;
-        width: 0%;
-        height: 100%;
-        border-top: 0px white solid; 
-        margin-top: 0px;
-        background: ;
-          margin:0px;
+     background: whitesmoke;
+   
 
-    }
+}
+.resume{
+    border: 0px solid black; 
+    background: ;
+    height: 500px;
+   width: 400px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start;
 
-    .side_panel_l{
-     
-    }
-    .side_panel_m{
-       display: flex;
-       order: -1;
+    /* -webkit-box-shadow: inset 0px 19px 52px -15px rgba(0,0,0,0.51);
+    -moz-box-shadow: inset 0px 19px 52px -15px rgba(0,0,0,0.51);
+    box-shadow: inset 0px 19px 52px -15px rgba(0,0,0,0.51); */
+    overflow: hidden auto;
 
-    }
-    #L_W> p  {color: pink;
 
-    }
-     #L_W_1>p{color: blue;
+}
+.resume_block {
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+    border-bottom: 2px solid black;
+}
+.job_short{
+    display: flex;
+    flex-direction: column;
+}
+p, li {
+    font-size: 13px;
+}
+.job_short> p,h1,h2,h3,h4,h5,h6 {
+    line-height: 0px;
+}
+.job_short>p, {
+    font-size: 40px;
+}
 
-     }
-     #L_J>p{color: purple;}
-     #L_D{}  
-     #resume-content{
-         overflow: hidden scroll ;
-     }
- p{
-        color: black;
-        font-family: 'Kanit', sans-serif;
-               font-size: 30px;
-               padding: 0;
-               margin: 0;
-               white-space: pre-wrap;
-               margin-bottom: 0px;
-               margin-right:0px;
-    }
+/* Footer begin */
+#footer{
+    width: 100%;
+    Height: 40px;
+    background: lightgrey;
+    margin-bottom: 10px;
+    display: flex; 
+    align-items: center;
+    margin-top: 10px;
+    
+
+}
+
+#foot-block{
+    width: 30px; 
+    height: 25px;
+    border: black 1px solid;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+}
+
+/* Tablet - Format Style 4 - Landscape Desktop */
+@media only screen  and (min-width: 901px){
+   body{
+    height: 100vh;
+    width: 100vw;
+    background: #4a4d41;
+    overflow: hidden none;
+ }
+
+    #wrapper{
+
+  }
+  #header {
+    height: 72px;
+    width: 100%;
+}
+
+#main-content{
+      height: 72px;
+    width: 100%;
+}
 }
