@@ -11,14 +11,14 @@
     p{
         color: black;
         font-family: 'Kanit', sans-serif;
-               font-size: 60px;
+               font-size: 40px;
                padding: 0;
                margin: 0;
                white-space: pre-wrap;
                margin-bottom: -20px;
                margin-right:10px;
     }
-    body{ background: pink;
+    body{ background: lightblue;
     font-family: 'Kanit', sans-serif;
     color: black;
     }
@@ -288,46 +288,55 @@ body{
          height: 360px; 
     width:480px;
     overflow: hidden;
+    font-family: 'Kanit', sans-serif;
+   
 }
 #wrapper{
-    height: 100vh; 
-    width:100vw;
-    border: 0px grey solid;
+    
+    height: 100%; 
+    width:100%;
+    border: 2px grey solid;
     overflow: hidden;
     background: #4a4d41;
-      margin:0px;
-       padding: 0px;
-       display: flex; 
-          align-items: flex-start;
+    margin:0px;
+    padding: 0px;
+    display: flex; 
+
+    align-items: center;
 
 }
 
     #header{
         width: 30%;
         height: 100%;
-        background: white ;
+        background:  ;
         display: flex; 
         justify-content: flex-start;
         margin-bottom: 0px;
         margin:0px;
         padding: 0px;
          align-items: flex-start;
+         border: 2px grey solid;
+         flex-direction: column;
+   
     }
     #main_content{
         display: flex;
         flex-direction: column;
-        width: 60%;
+        width: 70%;
         height: 100%;
-        margin:0px;
-        background:   ;
+        margin:5px;
+        background: ;
+       border: 2px grey solid;
      
     }
     #footer{
+        visibility: hidden;
         display: flex; 
         flex-direction: row; 
         justify-content: center;
         align-items: center;
-        width: 10%;
+        width: 0%;
         height: 100%;
         border-top: 0px white solid; 
         margin-top: 0px;
@@ -337,18 +346,32 @@ body{
     }
 
     .side_panel_l{
-        visibility: hidden;
+     
     }
     .side_panel_m{
-        display: flex;
-        flex-direction: row;
+       display: flex;
+       order: -1;
+
     }
-    #L_W  {}
-     #L_W_1{}
-     #L_J{}
+    #L_W> p  {color: pink;
+
+    }
+     #L_W_1>p{color: blue;
+
+     }
+     #L_J>p{color: purple;}
      #L_D{}  
      #resume-content{
-         visibility: hidden;
+         overflow: hidden scroll ;
      }
-
-     `
+ p{
+        color: black;
+        font-family: 'Kanit', sans-serif;
+               font-size: 30px;
+               padding: 0;
+               margin: 0;
+               white-space: pre-wrap;
+               margin-bottom: 0px;
+               margin-right:0px;
+    }
+}
