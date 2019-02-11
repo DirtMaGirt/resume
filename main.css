@@ -1,423 +1,956 @@
 @import url('https://fonts.googleapis.com/css?family=Kanit:900');
-
-h1, h2, h3, h4, h5, p, {
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+{
     line-height: .2;
 }
 
-/* Mobile - Format Style 1 - Portrait */
-@media only screen  and (min-width: 0px)  and (max-width: 480px) and (orientation: portrait) {
- 
- body{
-     height: 100vh;
-     width: 400px;
-     background: ;
-     overflow: hidden;
-          display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center ;
- }
-
- #wrapper_{
-     height: 700px;
-     width: 400px;
-     background: ;
-     border: 0px solid grey;
-     display: flex;
-    flex-direction: column;
-     justify-content: center;
-     align-items: center;
-}
-
-/* Start Header */
-
-#header {
-     height: 100px;
-     width: 400px;
-     border: 0px solid black;
-     display: flex; 
-     align-items: center;
-     
-}
-
-
-.block_A{
-height:98%;
-width: 150px;
-background: ;
-  border-right: 2px solid black;
-  display: flex; 
-  align-items: center;
-  justify-content: center;
-}
-
-.block_B{
-    margin-left: 5px;
-height:98%;
-width: 250px;
-background: ;
-  border-left: 3px solid black;
-   display: flex; 
-   flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  text-transform: uppercase;
- 
-}
-
-.block_B>h1{
-    line-height: .0;
-     font-size: 20px;
-}
-
-.block_A>h1{
-    line-height: .2;
-    font-size: 30px;
-}
-
-
-
-#main-content{
-      height: 610px;
-    width: 402px;
-    display: flex; 
-      flex-direction: column;
-}
-
-/* Resume Styling */
-.resume-head{
-    border: 0px solid black;
-    height: 60px;
-    width: 380px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
-      display: flex; 
-      flex-direction: column;
-     justify-content: center;
-     align-items: center;
-   
-     background: whitesmoke;
-   
-
-}
-.resume{
-    border: 0px solid black; 
-    background: ;
-    height: 460px;
-   width: 400px;
-    display: flex; 
-    flex-direction: column; 
-    align-items: flex-start;
-
-    /* -webkit-box-shadow: inset 0px 19px 52px -15px rgba(0,0,0,0.51);
+@media only screen and (min-width: 0) and (max-width: 470) and (orientation: portrait) {
+    body {
+        height: 100vh;
+        width: 768px;
+        background: ;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Staatliches', cursive;
+    }
+    #wrapper_main {
+        height: 100%;
+        width: 760px;
+        border: 0px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #wrapper_content {
+        margin-left: 20px;
+        width: 320px;
+        height: 90%;
+        background: whitesmoke;
+        border-top: solid 0px black;
+        border-right: solid 0px black;
+        border-bottom: solid 0px black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Staatliches', cursive;
+        visibility: hidden;
+    }
+    .section {
+        height: 90%;
+        width: 310px;
+        margin-top: 10px;
+        border: 2px solid black;
+    }
+    .section_head {
+        height: 50px;
+        border: 0px black solid;
+        background: lightgrey;
+        margin-left: 10px;
+    }
+    .section_content {
+        height: 100px;
+        border: 1px black solid;
+        border-right: 0px;
+        background: ;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    /* Mobile-wrapper */
+    #wrapper_mobile {
+        height: 700px;
+        width: 400px;
+        background: ;
+        border: 0px solid grey;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* Start Header */
+    #header {
+        height: 100px;
+        width: 400px;
+        border: 0px solid black;
+        display: flex;
+        align-items: center;
+    }
+    .block_A {
+        height: 98%;
+        width: 150px;
+        background: ;
+        border-right: 2px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .block_B {
+        margin-left: 5px;
+        height: 98%;
+        width: 250px;
+        background: ;
+        border-left: 3px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        text-transform: uppercase;
+    }
+    .block_B>h1 {
+        line-height: .0;
+        font-size: 20px;
+    }
+    .block_A>h1 {
+        line-height: .2;
+        font-size: 25px;
+    }
+    #main-content {
+        height: 610px;
+        width: 402px;
+        display: flex;
+        flex-direction: column;
+    }
+    /* Resume Styling */
+    .resume-head {
+        border: 0px solid black;
+        height: 60px;
+        width: 380px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: whitesmoke;
+    }
+    .resume {
+        border: 0px solid black;
+        background: ;
+        height: 500px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* -webkit-box-shadow: inset 0px 19px 52px -15px rgba(0,0,0,0.51);
     -moz-box-shadow: inset 0px 19px 52px -15px rgba(0,0,0,0.51);
     box-shadow: inset 0px 19px 52px -15px rgba(0,0,0,0.51); */
-    overflow: hidden auto;
+        overflow: hidden auto;
+    }
+    .resume_block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 10px;
+        border-bottom: 2px solid black;
+    }
+    .job_short {
+        display: flex;
+        flex-direction: column;
+    }
+    p,
+    li {
+        font-size: 13px;
+    }
+    .job_short>p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        line-height: 0px;
+    }
+    .job_short>p,
+    {
+        font-size: 40px;
+    }
+    /* Footer begin */
+    #footer {
+        width: 100%;
+        Height: 40px;
+        background: lightgrey;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+    #foot-block {
+        width: 30px;
+        height: 25px;
+        border: black 1px solid;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
 
 
-}
-.resume_block {
-    display: flex; 
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 10px;
-    border-bottom: 2px solid black;
-}
-.job_short{
-    display: flex;
-    flex-direction: column;
-}
-p, li {
-    font-size: 13px;
-}
-.job_short> p,h1,h2,h3,h4,h5,h6 {
-    line-height: 0px;
-}
-.job_short>p, {
-    font-size: 40px;
-}
+/* Mobile - Format Style 1 - Portrait */
 
-/* Footer begin */
-#footer{
-    width: 100%;
-    Height: 40px;
-    background: lightgrey;
-    margin-bottom: 10px;
-    display: flex; 
-    align-items: center;
-    margin-top: 10px;
-    
-
+@media only screen and (min-width: 0px) and (orientation: portrait) {
+    body {
+        height: 100vh;
+        width: 768px;
+        background: ;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Staatliches', cursive;
+        overflow: hidden auto;
+    }
+    #wrapper_main {
+        height: 100%;
+        width: 760px;
+        border: 0px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden auto;
+    }
+    #wrapper_content {
+        margin-left: 20px;
+        width: 320px;
+        height: 90%;
+        background: whitesmoke;
+        border-top: solid 0px black;
+        border-right: solid 0px black;
+        border-bottom: solid 0px black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Staatliches', cursive;
+        visibility: hidden;
+    }
+    .section {
+        height: 90%;
+        width: 310px;
+        margin-top: 10px;
+        border: 2px solid black;
+    }
+    .section_head {
+        height: 50px;
+        border: 0px black solid;
+        background: lightgrey;
+        margin-left: 10px;
+    }
+    .section_content {
+        height: 100px;
+        border: 1px black solid;
+        border-right: 0px;
+        background: ;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    /* Mobile-wrapper */
+    #wrapper_mobile {
+        height: 700px;
+        width: 400px;
+        background: ;
+        border: 0px solid grey;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden scroll;
+    }
+    /* Start Header */
+    #header {
+        height: 100px;
+        width: 400px;
+        border: 0px solid black;
+        display: flex;
+        align-items: center;
+    }
+    .block_A {
+        height: 98%;
+        width: 150px;
+        background: ;
+        border-right: 2px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .block_B {
+        margin-left: 5px;
+        height: 98%;
+        width: 250px;
+        background: ;
+        border-left: 3px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        text-transform: uppercase;
+    }
+    .block_B>h1 {
+        line-height: .0;
+        font-size: 20px;
+    }
+    .block_A>h1 {
+        line-height: .2;
+        font-size: 25px;
+    }
+    #main-content {
+        height: 610px;
+        width: 402px;
+        display: flex;
+        flex-direction: column;
+    }
+    /* Resume Styling */
+    .resume-head {
+        border: 0px solid black;
+        height: 60px;
+        width: 380px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: whitesmoke;
+    }
+    .resume {
+        border: 0px solid black;
+        background: ;
+        height: 500px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* -webkit-box-shadow: inset 0px 19px 52px -15px rgba(0,0,0,0.51);
+    -moz-box-shadow: inset 0px 19px 52px -15px rgba(0,0,0,0.51);
+    box-shadow: inset 0px 19px 52px -15px rgba(0,0,0,0.51); */
+        overflow: hidden auto;
+    }
+    .resume_block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 10px;
+        border-bottom: 2px solid black;
+    }
+    .job_short {
+        display: flex;
+        flex-direction: column;
+    }
+    p,
+    li {
+        font-size: 13px;
+    }
+    .job_short>p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        line-height: 0px;
+    }
+    .job_short>p,
+    {
+        font-size: 40px;
+    }
+    /* Footer begin */
+    #footer {
+        width: 100%;
+        Height: 40px;
+        background: lightgrey;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+    #foot-block {
+        width: 30px;
+        height: 25px;
+        border: black 1px solid;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
-
-#foot-block{
-    width: 30px; 
-    height: 25px;
-    border: black 1px solid;
-    margin-left: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-}
-
 
 
 /* Mobile - Format Style 2 - Landscape (For Galaxy S9/S9+) */
-@media only screen  and (min-width: 100px) and (orientation: landscape) {
-  body{
-   height: 100vh;
-     width: 100vw;
-     background: white;
-      overflow: hidden;
-      }
 
-  #wrapper{
-
-  }
-
-  #header {
-    height: 72px;
-    width: 100%;
-   
+@media only screen and (min-width: 0px) and (max-height: 400px) and (orientation: landscape) {
+    body {
+        height: 100vh;
+        width: 100%;
+        background: grey;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Staatliches', cursive;
+    }
+    #wrapper_main {
+        height: 100%;
+        width: 100%;
+        border: 0px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #wrapper_content {
+        margin-left: 20px;
+        width: 0px;
+        height: 90%;
+        background: whitesmoke;
+        border-top: solid 0px black;
+        border-right: solid 0px black;
+        border-bottom: solid 0px black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Staatliches', cursive;
+        visibility: hidden;
+    }
+    .section {
+        height: 90%;
+        width: 310px;
+        margin-top: 10px;
+        border: 2px solid black;
+    }
+    .section_head {
+        height: 50px;
+        border: 0px black solid;
+        background: lightgrey;
+        margin-left: 10px;
+    }
+    .section_content {
+        height: 100px;
+        border: 1px black solid;
+        border-right: 0px;
+        background: ;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    /* Mobile-wrapper */
+    #wrapper_mobile {
+        height: 100%;
+        width: 500px;
+        background: ;
+        border: 0px solid grey;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    /* Start Header */
+    #header {
+        height: 50px;
+        width: 100%;
+        border: 0px solid black;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .block_A {
+        height: 98%;
+        width: 150px;
+        background: ;
+        border-right: 2px solid black;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-end;
+        text-transform: uppercase;
+    }
+    .block_B {
+        margin-left: 5px;
+        height: 98%;
+        width: 250px;
+        background: ;
+        border-left: 3px solid black;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-end;
+        text-transform: uppercase;
+    }
+    .block_B>h1 {
+        line-height: .0;
+        font-size: 20px;
+        margin-right: 3px;
+    }
+    .block_A>h1 {
+        margin-top: 20px;
+        line-height: .2;
+        font-size: 20px;
+        margin-right: 1px;
+        margin-right: 10px;
+    }
+    #main-content {
+        height: 150px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+    /* Resume Styling */
+    .resume-head {
+        border: 0px solid black;
+        height: 30px;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: whitesmoke;
+    }
+    .resume {
+        border: 0px solid black;
+        background: ;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* -webkit-box-shadow: inset 0px 19px 52px -15px rgba(0,0,0,0.51);
+-moz-box-shadow: inset 0px 19px 52px -15px rgba(0,0,0,0.51);
+box-shadow: inset 0px 19px 52px -15px rgba(0,0,0,0.51); */
+        overflow: hidden auto;
+    }
+    .resume_block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 10px;
+        border-bottom: 2px solid black;
+    }
+    .job_short {
+        display: flex;
+        flex-direction: column;
+    }
+    p,
+    li {
+        font-size: 13px;
+    }
+    .job_short>p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        line-height: 0px;
+    }
+    .job_short>p,
+    {
+        font-size: 40px;
+    }
+    /* Footer begin */
+    #footer {
+        width: 100%;
+        Height: 40px;
+        background: lightgrey;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+    #foot-block {
+        width: 30px;
+        height: 25px;
+        border: black 1px solid;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
-#main-content{
-      height: 72px;
-    width: 100%;
-}
-}
 
 /* Tablet - Format Style 3 - Landscape Ipad */
-@media only screen  and (min-width: 768px) and (max-width: 900px){
 
- body{
-     height: 100vh;
-     width: 768px;
-     background: ;
-     overflow: hidden;
-          display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center ;
- }
- #wrapper_main{
-     height: 100%; 
-     width: 760px;
-     border: 0px solid black;
-     display: flex; 
-     align-items: center;
-     justify-content: center;
-
- }
-
-#wrapper_content{
-    margin-left: 20px;
-    width: 320px; 
-    height: 90%; 
-    background: whitesmoke;
-    border-top: solid 0px black;
-    border-right: solid 0px black;
-    border-bottom: solid 0px black;
-    display: flex; 
-    flex-direction: column; 
-    align-items: center;
-
-}
-
-.section{
-    height: 90%; 
-    width: 310px; 
-    
-    margin-top: 10px;
-    border: 2px solid black;
-}
-.section_head{
-height: 50px;
-border: 0px black solid;
-background: lightgrey;
-margin-left: 10px;
-}
-
-.section_content{
-height: 100px;
-border: 1px black solid;
-border-right: 0px;
-background: ;
-margin-left: 10px;
-margin-top: 10px;
-}
-/* Mobile-wrapper */
-
- #wrapper_mobile{
-     height: 700px;
-     width: 400px;
-     background: ;
-     border: 0px solid grey;
-     display: flex;
-    flex-direction: column;
-     justify-content: center;
-     align-items: center;
-}
-
-
-
-/* Start Header */
-
-#header {
-     height: 100px;
-     width: 400px;
-     border: 0px solid black;
-     display: flex; 
-     align-items: center;
-     
-}
-
-
-.block_A{
-height:98%;
-width: 150px;
-background: ;
-  border-right: 2px solid black;
-  display: flex; 
-  align-items: center;
-  justify-content: center;
-}
-
-.block_B{
-    margin-left: 5px;
-height:98%;
-width: 250px;
-background: ;
-  border-left: 3px solid black;
-   display: flex; 
-   flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  text-transform: uppercase;
- 
-}
-
-.block_B>h1{
-    line-height: .0;
-     font-size: 20px;
-}
-
-.block_A>h1{
-    line-height: .2;
-    font-size: 30px;
-}
-
-
-
-#main-content{
-      height: 610px;
-    width: 402px;
-    display: flex; 
-      flex-direction: column;
-}
-
-/* Resume Styling */
-.resume-head{
-    border: 0px solid black;
-    height: 60px;
-    width: 380px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
-      display: flex; 
-      flex-direction: column;
-     justify-content: center;
-     align-items: center;
-   
-     background: whitesmoke;
-   
-
-}
-.resume{
-    border: 0px solid black; 
-    background: ;
-    height: 500px;
-   width: 400px;
-    display: flex; 
-    flex-direction: column; 
-    align-items: flex-start;
-
-    /* -webkit-box-shadow: inset 0px 19px 52px -15px rgba(0,0,0,0.51);
+@media only screen and (min-width: 0px) and (min-height: 400px) and (orientation: landscape) {
+    body {
+        height: 100vh;
+        width: 100vw;
+        background: ;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Staatliches', cursive;
+    }
+    #wrapper_main {
+        height: 100%;
+        width: 100vw;
+        border: 0px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #wrapper_content {
+        margin-left: 20px;
+        width: 320px;
+        height: 90%;
+        background: whitesmoke;
+        border-top: solid 0px black;
+        border-right: solid 0px black;
+        border-bottom: solid 0px black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Staatliches', cursive;
+    }
+    .section {
+        height: 90%;
+        width: 310px;
+        margin-top: 10px;
+        border: 2px solid black;
+    }
+    .section_head {
+        height: 50px;
+        border: 0px black solid;
+        background: lightgrey;
+        margin-left: 10px;
+    }
+    .section_content {
+        height: 100px;
+        border: 1px black solid;
+        border-right: 0px;
+        background: ;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    /* Mobile-wrapper */
+    #wrapper_mobile {
+        height: 700px;
+        width: 400px;
+        background: ;
+        border: 0px solid grey;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* Start Header */
+    #header {
+        height: 100px;
+        width: 400px;
+        border: 0px solid black;
+        display: flex;
+        align-items: center;
+    }
+    .block_A {
+        height: 98%;
+        width: 150px;
+        background: ;
+        border-right: 2px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .block_B {
+        margin-left: 5px;
+        height: 98%;
+        width: 250px;
+        background: ;
+        border-left: 3px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        text-transform: uppercase;
+    }
+    .block_B>h1 {
+        line-height: .0;
+        font-size: 20px;
+    }
+    .block_A>h1 {
+        line-height: .2;
+        font-size: 25px;
+    }
+    #main-content {
+        height: 610px;
+        width: 402px;
+        display: flex;
+        flex-direction: column;
+    }
+    /* Resume Styling */
+    .resume-head {
+        border: 0px solid black;
+        height: 60px;
+        width: 380px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: whitesmoke;
+    }
+    .resume {
+        border: 0px solid black;
+        background: ;
+        height: 500px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* -webkit-box-shadow: inset 0px 19px 52px -15px rgba(0,0,0,0.51);
     -moz-box-shadow: inset 0px 19px 52px -15px rgba(0,0,0,0.51);
     box-shadow: inset 0px 19px 52px -15px rgba(0,0,0,0.51); */
-    overflow: hidden auto;
+        overflow: hidden auto;
+    }
+    .resume_block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 10px;
+        border-bottom: 2px solid black;
+    }
+    .job_short {
+        display: flex;
+        flex-direction: column;
+    }
+    p,
+    li {
+        font-size: 13px;
+    }
+    .job_short>p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        line-height: 0px;
+    }
+    .job_short>p,
+    {
+        font-size: 40px;
+    }
+    /* Footer begin */
+    #footer {
+        width: 100%;
+        Height: 40px;
+        background: lightgrey;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+    #foot-block {
+        width: 30px;
+        height: 25px;
+        border: black 1px solid;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
 
-
-}
-.resume_block {
-    display: flex; 
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 10px;
-    border-bottom: 2px solid black;
-}
-.job_short{
-    display: flex;
-    flex-direction: column;
-}
-p, li {
-    font-size: 13px;
-}
-.job_short> p,h1,h2,h3,h4,h5,h6 {
-    line-height: 0px;
-}
-.job_short>p, {
-    font-size: 40px;
-}
-
-/* Footer begin */
-#footer{
-    width: 100%;
-    Height: 40px;
-    background: lightgrey;
-    margin-bottom: 10px;
-    display: flex; 
-    align-items: center;
-    margin-top: 10px;
-    
-
-}
-
-#foot-block{
-    width: 30px; 
-    height: 25px;
-    border: black 1px solid;
-    margin-left: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-}
 
 /* Tablet - Format Style 4 - Landscape Desktop */
-@media only screen  and (min-width: 901px){
-   body{
-    height: 100vh;
-    width: 100vw;
-    background: #4a4d41;
-    overflow: hidden none;
- }
 
-    #wrapper{
-
-  }
-  #header {
-    height: 72px;
-    width: 100%;
+@media only screen and (min-width: 600px) {
+    body {
+        height: 100vh;
+        width: 768px;
+        background: ;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Staatliches', cursive;
+    }
+    #wrapper_main {
+        height: 100%;
+        width: 760px;
+        border: 0px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #wrapper_content {
+        margin-left: 20px;
+        width: 320px;
+        height: 90%;
+        background: whitesmoke;
+        border-top: solid 0px black;
+        border-right: solid 0px black;
+        border-bottom: solid 0px black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Staatliches', cursive;
+    }
+    .section {
+        height: 90%;
+        width: 310px;
+        margin-top: 10px;
+        border: 2px solid black;
+    }
+    .section_head {
+        height: 50px;
+        border: 0px black solid;
+        background: lightgrey;
+        margin-left: 10px;
+    }
+    .section_content {
+        height: 100px;
+        border: 1px black solid;
+        border-right: 0px;
+        background: ;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    /* Mobile-wrapper */
+    #wrapper_mobile {
+        height: 700px;
+        width: 400px;
+        background: ;
+        border: 0px solid grey;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* Start Header */
+    #header {
+        height: 100px;
+        width: 400px;
+        border: 0px solid black;
+        display: flex;
+        align-items: center;
+    }
+    .block_A {
+        height: 98%;
+        width: 150px;
+        background: ;
+        border-right: 2px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .block_B {
+        margin-left: 5px;
+        height: 98%;
+        width: 250px;
+        background: ;
+        border-left: 3px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        text-transform: uppercase;
+    }
+    .block_B>h1 {
+        line-height: .0;
+        font-size: 20px;
+    }
+    .block_A>h1 {
+        line-height: .2;
+        font-size: 25px;
+    }
+    #main-content {
+        height: 610px;
+        width: 402px;
+        display: flex;
+        flex-direction: column;
+    }
+    /* Resume Styling */
+    .resume-head {
+        border: 0px solid black;
+        height: 60px;
+        width: 380px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: whitesmoke;
+    }
+    .resume {
+        border: 0px solid black;
+        background: ;
+        height: 500px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* -webkit-box-shadow: inset 0px 19px 52px -15px rgba(0,0,0,0.51);
+    -moz-box-shadow: inset 0px 19px 52px -15px rgba(0,0,0,0.51);
+    box-shadow: inset 0px 19px 52px -15px rgba(0,0,0,0.51); */
+        overflow: hidden auto;
+    }
+    .resume_block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 10px;
+        border-bottom: 2px solid black;
+    }
+    .job_short {
+        display: flex;
+        flex-direction: column;
+    }
+    p,
+    li {
+        font-size: 13px;
+    }
+    .job_short>p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        line-height: 0px;
+    }
+    .job_short>p,
+    {
+        font-size: 40px;
+    }
+    /* Footer begin */
+    #footer {
+        width: 100%;
+        Height: 40px;
+        background: lightgrey;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+    #foot-block {
+        width: 30px;
+        height: 25px;
+        border: black 1px solid;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
-#main-content{
-      height: 72px;
-    width: 100%;
-}
+
 }
